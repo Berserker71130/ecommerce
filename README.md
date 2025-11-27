@@ -54,9 +54,7 @@ Since this application is purely frontend, setup is very straightforward.
     
 4.  **Start the development server:**
     bash
-    npm run dev
-    # OR
-    # yarn dev
+    npm start
     ```
 
 The application will launch and be fully operational in your browser, typically at http://localhost:3000.
