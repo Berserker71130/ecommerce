@@ -39,21 +39,17 @@ Since this application is purely frontend, setup is very straightforward.
 ### Installation
 
 1.  **Clone the repository:**
-    bash
     git clone [Your-GitHub-Repository-URL]
     
 2.  **Navigate to the project directory:**
-    bash
     cd ecommerce
     
 3.  **Install dependencies:**
-    bash
     npm install
     # OR
     # yarn install
     
 4.  **Start the development server:**
-    bash
     npm start
     ```
 
