@@ -1,4 +1,4 @@
-# Name: Frontend E-Commerce Demonstration
+# Name: Frontend E-Commerce Demonstration.
 
 ## 🌟 Overview
 
