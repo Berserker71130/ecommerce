@@ -59,9 +59,13 @@ The application will launch and be fully operational in your browser, typically 
 
 
 <img width="1366" height="768" alt="E-commerce main page" src="https://github.com/user-attachments/assets/ccd7af9f-c89c-49bc-a5cd-927f6edc8587" />
+The Landing page
 
 <img width="1366" height="768" alt="Items add to cart" src="https://github.com/user-attachments/assets/fc28cd72-3c74-4a0f-8c59-c60722c08026" />
+Items added to cart
 
 <img width="1366" height="768" alt="Checkout" src="https://github.com/user-attachments/assets/8e442db6-82f2-44d2-885b-b54b12907ff1" />
+The checkout process
 
 <img width="1366" height="768" alt="Successfully checked out" src="https://github.com/user-attachments/assets/33065956-84bb-4ea8-a269-834afd88448e" />
+A successful checkout
