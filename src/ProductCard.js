@@ -5,6 +5,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         className="w-full h-56 object-cover"
         src={product.image}
         alt={product.name}
+        loading="lazy"
       />
 
       <div className="p-4">

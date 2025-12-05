@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import ShopPage from "./ShopPage";
 import Header from "./Header";
-import CartDisplay from "./CartDisplay";
-import Checkout from "./Checkout";
+// import CartDisplay from "./CartDisplay";
+// import Checkout from "./Checkout";
+const Checkout = lazy(() => import("./Checkout"));
+const CartDisplay = lazy(() => import("./CartDisplay"));
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -67,16 +69,27 @@ function App() {
       <Header cart={cart} onCartClick={handleCartClick} />
 
       <main>
-        {showShop ? (
-          <ShopPage addToCart={addToCart} />
-        ) : (
-          <Checkout
-            cart={cart}
-            calculateTotal={calculateTotal}
-            clearCart={clearCart}
-            setShowShop={setShowShop}
-          />
-        )}
+        <Suspense
+          fallback={
+            <div className="flex flex-col items-center justify-center p-20">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+              <p className="mt-4 text-gray-600 font-medium">
+                Securing your checkout...
+              </p>
+            </div>
+          }
+        >
+          {showShop ? (
+            <ShopPage addToCart={addToCart} />
+          ) : (
+            <Checkout
+              cart={cart}
+              calculateTotal={calculateTotal}
+              clearCart={clearCart}
+              setShowShop={setShowShop}
+            />
+          )}
+        </Suspense>
       </main>
 
       {isCartOpen && (
